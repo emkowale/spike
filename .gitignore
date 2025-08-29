@@ -1,0 +1,19 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node / builds
+node_modules/
+dist/
+*.log
+
+# Composer vendor (ONLY ignore if you deploy vendor separately)
+# Remove this line if you want vendor committed for production installs.
+vendor/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
