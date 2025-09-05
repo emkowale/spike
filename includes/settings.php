@@ -2,6 +2,7 @@
 if (!defined('ABSPATH')) exit;
 function spike_defaults(){
   return [
+    'diagram_url'=>'',
     'recipients'=>'eric@kowalewski.com',
     'thankyou'=>'https://proactivehealthmanager.com/thank-you-for-your-intake-form/',
     'recaptcha_site'=>'','recaptcha_secret'=>'','recaptcha_score'=>'0.5',
@@ -14,6 +15,7 @@ function spike_admin_init(){
   register_setting('spike','spike_opts',function($v){ $d=spike_defaults(); return array_merge($d,$v); });
   add_settings_section('spike_main','General',function(){},'spike');
   foreach([
+    'diagram_url'=>'Pain diagram image URL (optional)',
     'recipients'=>'Extra admin recipients (comma-separated)',
     'thankyou'=>'Thank-you URL',
     'recaptcha_site'=>'reCAPTCHA v3 Site Key',

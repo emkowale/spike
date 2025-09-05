@@ -12,6 +12,7 @@ define('SPIKE_VER','1.0.1');
 define('SPIKE_DIR', plugin_dir_path(__FILE__));
 define('SPIKE_URL', plugin_dir_url(__FILE__));
 if (file_exists(SPIKE_DIR.'vendor/autoload.php')) require SPIKE_DIR.'vendor/autoload.php';
+require_once SPIKE_DIR.'includes/fields.php';
 require_once SPIKE_DIR.'includes/updater.php';
 require_once SPIKE_DIR.'includes/cpt.php';
 require_once SPIKE_DIR.'includes/settings.php';
