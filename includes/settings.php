@@ -16,7 +16,7 @@ function spike_admin_init(){
   add_settings_section('spike_main','General',function(){},'spike');
   foreach([
     'diagram_url'=>'Pain diagram image URL (optional)',
-    'recipients'=>'Extra admin recipients (comma-separated)',
+    'recipients'=>'Admin email recipients (comma-separated)',
     'thankyou'=>'Thank-you URL',
     'recaptcha_site'=>'reCAPTCHA v3 Site Key',
     'recaptcha_secret'=>'reCAPTCHA v3 Secret',

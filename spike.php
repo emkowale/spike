@@ -21,5 +21,6 @@ require_once SPIKE_DIR.'includes/shortcode.php';
 require_once SPIKE_DIR.'includes/pdf.php';
 require_once SPIKE_DIR.'includes/submit.php';
 require_once SPIKE_DIR.'includes/csv-export.php';
+require_once SPIKE_DIR.'/includes/admin.php';
 register_activation_hook(__FILE__,function(){ spike_register_cpt(); flush_rewrite_rules(); });
 register_deactivation_hook(__FILE__,function(){ flush_rewrite_rules(); });
