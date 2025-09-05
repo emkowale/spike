@@ -17,3 +17,5 @@ vendor/
 *.zip
 *.tar
 *.tar.gz
+!/vendor/
+!/vendor/**
